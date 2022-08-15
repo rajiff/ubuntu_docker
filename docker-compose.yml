@@ -1,0 +1,9 @@
+  services:
+    mylocal_ubuntu22: 
+      image: ubuntu:22.10
+      container_name: mylocal_ubuntu22
+      stdin_open: true # docker run -i
+      tty: true # docker run -t
+      volumes:
+        - $PWD/ubuntu_home:/home
+      # network_mode: host
