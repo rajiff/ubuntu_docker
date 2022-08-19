@@ -5,7 +5,7 @@ WORKDIR $HOME
 RUN apt-get update && \
     apt-get install -y gnupg && 
     apt-get install -y software-properties-common && \
-    apt-get install -y wget curl git unzip vim python3-pip
+    apt-get install -y wget curl git unzip vim python3-pip groff
 
 ## Check architecture by command "uname -m"
 ARG LINUX_ARCH=aarch64 # Apple M1 processor
